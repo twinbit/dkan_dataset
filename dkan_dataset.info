@@ -1,6 +1,7 @@
 name = DKAN Dataset
 description = Custom elements for Datasets.
 core = 7.x
+version = "7.x-1.x"
 package = DKAN
 php = 5.2.4
 project = dkan_dataset
@@ -10,6 +11,7 @@ dependencies[] = chosen
 dependencies[] = ctools
 dependencies[] = date
 dependencies[] = date_popup
+dependencies[] = dkan_dataset
 dependencies[] = double_field
 dependencies[] = entity
 dependencies[] = entityreference

@@ -21,14 +21,19 @@ projects[context][subdir] = contrib
 projects[ctools][version] = 1.4
 projects[ctools][subdir] = contrib
 
-projects[date][version] = 2.7
+projects[date][version] = 2.8
 projects[date][subdir] = contrib
 
 projects[double_field][version] = 2.3
 projects[double_field][subdir] = contrib
 
-projects[entity][version] = 1.4
+projects[entity][download][type] = git
+projects[entity][download][branch] = 7.x-1.x
+projects[entity][download][url] = "http://git.drupal.org/project/entity.git"
+projects[entity][download][revision] = "4d2cc6f"
+projects[entity][patch][2341611] = https://www.drupal.org/files/issues/entity-multivalue-token-replacement-fix-2341611-0.patch
 projects[entity][subdir] = contrib
+projects[entity][type] = module
 
 projects[entityreference][version] = 1.1
 projects[entityreference][subdir] = contrib
@@ -40,7 +45,7 @@ projects[facetapi][subdir] = contrib
 projects[facetapi][version] = 1.3
 
 projects[facetapi_pretty_paths][subdir] = contrib
-projects[facetapi_pretty_paths][revision] = 1.0
+projects[facetapi_pretty_paths][version] = 1.1
 
 projects[features][version] = 2.0
 projects[features][subdir] = contrib
@@ -52,7 +57,12 @@ projects[field_group][subdir] = contrib
 projects[filefield_sources][version] = 1.9
 projects[filefield_sources][subdir] = contrib
 
+projects[gravatar][download][type] = git
+projects[gravatar][download][url] = "http://git.drupal.org/project/gravatar.git"
+projects[gravatar][download][revision] = e933db3
+projects[gravatar][patch][1568162] = http://drupal.org/files/views-display-user-picture-doesn-t-display-gravatar-1568162-10.patch
 projects[gravatar][subdir] = contrib
+projects[gravatar][type] = module
 
 projects[jquery_update][version] = 2.3
 projects[jquery_update][subdir] = contrib
@@ -66,7 +76,7 @@ projects[link][subdir] = contrib
 projects[link_iframe_formatter][download][type] = git
 projects[link_iframe_formatter][download][url] = "http://git.drupal.org/project/link_iframe_formatter.git"
 projects[link_iframe_formatter][download][revision] = 228f9f4
-projects[link_iframe_formatter][patch][2287233] = https://www.drupal.org/files/issues/link_iframe_formatter-coding-standards.patch 
+projects[link_iframe_formatter][patch][2287233] = https://www.drupal.org/files/issues/link_iframe_formatter-coding-standards.patch
 projects[link_iframe_formatter][subdir] = contrib
 projects[link_iframe_formatter][type] = module
 
@@ -89,12 +99,13 @@ projects[og_extras][type] = module
 projects[ref_field][download][type] = git
 projects[ref_field][download][url] = "http://git.drupal.org/project/ref_field.git"
 projects[ref_field][download][patch][1670356] = http://drupal.org/files/removed_notice-1670356-1.patch
-projects[ref_field][download][patch][2201735] = https://drupal.org/files/issues/ref_field-invalid_argument_supplied_for_foreach-2201735-2.patch
+projects[ref_field][download][patch][2360019] = https://www.drupal.org/files/issues/ref_field-delete-insert-warning-2360019-0.patch
 projects[ref_field][download][revision] = 9dbf7cf
 projects[ref_field][subdir] = contrib
 projects[ref_field][type] = module
 
-projects[remote_file_source][version] = 1.0
+projects[remote_file_source][version] = 1.x
+projects[remote_file_source][download][patch][2362487] = https://www.drupal.org/files/issues/remote_file_source-location-content-dist.patch
 projects[remote_file_source][subdir] = contrib
 
 projects[remote_stream_wrapper][version] = 1.0-beta4
@@ -119,13 +130,13 @@ projects[uuid][version] = 1.0-alpha5
 projects[uuid][patch][1927474] = http://drupal.org/files/unknown-column-in-field-list-fix-1927474-2.patch
 projects[uuid][subdir] = contrib
 
-projects[views][version] = 3.7
+projects[views][version] = 3.8
 projects[views][subdir] = contrib
 
 projects[recline][download][type] = git
 projects[recline][download][url] = https://github.com/NuCivic/recline.git
 projects[recline][download][branch] = 7.x-1.x
-;projects[recline][download][tag] = 7.x-1.1
+projects[recline][subdir] = contrib
 
 projects[entity_rdf][download][type] = git
 projects[entity_rdf][download][url] = http://git.drupal.org/project/entity_rdf.git
@@ -165,12 +176,33 @@ projects[imagecache_actions][download][revision] = cd19d2a
 projects[imagecache_actions][subdir] = contrib
 projects[imagecache_actions][type] = module
 
+projects[views_responsive_grid][version] = 1.3
+projects[views_responsive_grid][subdir] = contrib
+
+projects[views_bulk_operations][version] = 3.2
+projects[views_bulk_operations][subdir] = contrib
+
+projects[pathauto][version] = 1.2
+projects[pathauto][subdir] = contrib
+
 ; Libraries
 libraries[chosen][type] = libraries
 libraries[chosen][download][type] = git
 libraries[chosen][download][url] = "https://github.com/harvesthq/chosen.git"
 libraries[chosen][directory_name] = chosen
 libraries[chosen][download][revision] = "a0ca7da1ae52235b5abb6f66d9218a20450116c1"
+
+libraries[deep_diff][type] = libraries
+libraries[deep_diff][download][type] = git
+libraries[deep_diff][download][url] = "https://github.com/flitbit/diff.git"
+libraries[deep_diff][directory_name] = deep_diff
+libraries[deep_diff][download][revision] = "07e91c624e5016be5c5c6560a9eabe49ef3ba2d0"
+
+libraries[recline_deeplink][type] = libraries
+libraries[recline_deeplink][download][type] = git
+libraries[recline_deeplink][download][url] = "https://github.com/NuCivic/recline-deeplink.git"
+libraries[recline_deeplink][directory_name] = recline_deeplink
+libraries[recline_deeplink][download][revision] = "3175e9332b5bee893ad2e4c3018b81d1b4cde455"
 
 libraries[slugify][type] = libraries
 libraries[slugify][download][type] = git
